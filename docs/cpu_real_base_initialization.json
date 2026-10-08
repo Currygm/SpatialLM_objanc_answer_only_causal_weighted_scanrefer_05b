@@ -1,0 +1,56 @@
+{
+  "device": "cpu",
+  "gpu_validated": false,
+  "hidden_size": 896,
+  "layers": 24,
+  "answer_groups": {
+    "qwen_lora": {
+      "lr": 1e-05,
+      "parameters": 8798208
+    },
+    "structured_tokens": {
+      "lr": 1e-05,
+      "parameters": 7168
+    }
+  },
+  "base_manifest": {
+    "added_tokens.json": "03ae032135856de5edd09e8c20b8c3ddaccdcbaca0a9b1262e78f3e4228a08c8",
+    "config.json": "be62e7b6cd6c95355b15c28dc1ec29009553aa5abe9fbc81c942f144f2505d10",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model.safetensors": "61c9e386252163968c7daad465bcf5142f41234c40af7cf795c76278a076c769",
+    "special_tokens_map.json": "45cd689f24f4c531586b16899142f2c8d44f9cc3e3a3e477111db9a4cc568c3a",
+    "tokenizer.json": "5a993952f62bf1f44eac28586835f4a298d7414dc8ecc3ec7e0ef3d51294161d",
+    "tokenizer_config.json": "85d0fd8f80d297be379eac1939112245c8c7934b8f4eda72f2ae9c9b50bd4b79",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "answer_resume": {
+    "step": 0,
+    "epoch": 3
+  },
+  "migrated_tensors": 338,
+  "joint_groups": {
+    "structured_tokens": {
+      "lr": 1e-05,
+      "parameters": 7168
+    },
+    "sonata_lora": {
+      "lr": 1e-05,
+      "parameters": 1824512
+    },
+    "qwen_lora": {
+      "lr": 1e-05,
+      "parameters": 8798208
+    },
+    "point_unet": {
+      "lr": 0.0001,
+      "parameters": 1429504
+    },
+    "decoder": {
+      "lr": 0.0001,
+      "parameters": 17472000
+    }
+  },
+  "total_trainable_joint": 29531392,
+  "old_objective_rejected": true,
+  "elapsed_seconds": 100.77906107902527
+}

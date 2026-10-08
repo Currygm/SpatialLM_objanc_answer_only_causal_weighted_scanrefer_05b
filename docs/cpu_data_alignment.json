@@ -1,0 +1,27 @@
+{
+  "train": {
+    "samples": 36569
+  },
+  "val": {
+    "samples": 9483
+  },
+  "first_validation": {
+    "point_cloud_shape": [
+      127510,
+      12
+    ],
+    "raw_gt_masks_shape": [
+      2,
+      237360
+    ],
+    "superpoint_gt_masks_shape": [
+      2,
+      2343
+    ],
+    "mapping_count": 237360,
+    "roles": [
+      "OBJ",
+      "ANC"
+    ]
+  }
+}
