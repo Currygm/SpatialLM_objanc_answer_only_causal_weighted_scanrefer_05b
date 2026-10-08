@@ -5,3 +5,6 @@ outputs/
 evaluations*/
 logs/
 .tmp/
+data/
+models/
+.pytest_cache/

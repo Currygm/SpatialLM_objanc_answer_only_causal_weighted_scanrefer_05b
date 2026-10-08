@@ -1,0 +1,16 @@
+{
+  "official_archive_sha256": "5b5e5a56511ab32ce43776817e5e1ce4c6965d41408470a0306862b731f91590",
+  "full_derived_counts": {
+    "train": 36569,
+    "val": 9483
+  },
+  "exact_reference_annotation_comparison": {
+    "train": 200,
+    "val": 200
+  },
+  "full_geometry_cache_run": false,
+  "GPU_run": false,
+  "full_test_suite_passed": 48,
+  "full_test_suite_seconds": 23.85,
+  "independent_review": "no remaining important findings"
+}

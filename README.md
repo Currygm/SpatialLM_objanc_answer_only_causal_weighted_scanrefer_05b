@@ -25,3 +25,7 @@ source scripts/runtime_env.sh
 Use `torchrun --nproc_per_node=N` in place of Python after explicitly selecting authorized GPUs. Source runtime_env first; TMPDIR realpath/length is checked at `/home/huangxiang/codes/guiming/.ao05tmp`; all caches are rooted here. `--resume` resumes only the same stage.
 
 CPU verification command: `mkdir -p .tmp; CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=2 python -m pytest -q -s -p no:cacheprovider --basetemp=.tmp/pytest tests`. `-s` avoids this remote filesystem's pytest temporary capture truncate failure. See docs/progress.md for exact executed results. No GPU training/evaluation has run. Real-base CPU initialization/migration checks passed in 100.78s: Answer LoRA 8,798,208 + separate task rows 7,168 parameters; 338 state tensors migrated exactly into joint; joint 29,531,392 trainable parameters; old objective rejected. Synthetic completed-three-epoch metadata verified mechanics only; no actual Answer training occurred. See docs/cpu_real_base_initialization.json. Sparse point backward, BF16 GPU/DDP memory, complete train/eval and checkpoint roundtrips on GPUs remain pending.
+
+## Portable data preparation
+
+See [docs/DATA_PREPARATION.md](docs/DATA_PREPARATION.md) for standalone CPU commands to rebuild OBJ/ANC answers, normals and current k-NN superpoints. No data or cache is distributed in Git. These preparation entry points do not remove the training code's node-specific path checks.
